@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D4B; /* Dark background */
+    color: white; /* Change text color for better contrast */
+}
+
+header {
+    background-color: #6A0DAD; /* Neon purple */
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2); /* Light purplish-blue background */
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(106, 13, 173, 0.1)); /* Gradient effect for depth */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+}
+
+#introduction {
+    text-align: center;
+    margin-bottom: 50px; /* Adds space for scrolling */
+}
+
+.profile-pic {
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
+    border-radius: 50%;
+    background-color: #ccc; /* Placeholder color for profile picture */
+    background-size: cover; /* Ensure the image covers the div */
+    background-position: center; /* Center the image */
+    margin: 20px auto;
+}
+
+h1, h2, h3 {
+    color: #FFD700; /* Neon yellow for headings */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #FFD700; /* Neon yellow for links */
+    text-decoration: none; /* No underline by default */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #6A0DAD; /* Neon purple */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.animated-shapes {
+    position: relative;
+    height: 100px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow for moving shapes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape {
+    width: 50px; /* Size of the shape */
+    height: 50px; /* Size of the shape */
+    border-radius: 50%; /* Makes it a circle */
+    background-color: rgba(255, 215, 0, 0.7); /* Color of the shape */
+    position: absolute;
+    animation: move 5s infinite alternate; /* Animation */
+}
+
+/* Create multiple shapes with different animations */
+.shape:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.shape:nth-child(2) {
+    animation-delay: 1s;
+    background-color: rgba(106, 13, 173, 0.7); /* Different color */
+}
+
+.shape:nth-child(3) {
+    animation-delay: 2s;
+    background-color: rgba(0, 255, 255, 0.7); /* Different color */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw); /* Moves across the full width of the viewport */
+    }
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+#socials {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#socials img {
+    margin: 0 10px; /* Add space between icons */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+#socials img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
